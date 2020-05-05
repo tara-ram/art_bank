@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #333333;
+
+}
+h1, h2, h3, h4,p{
+    margin: 0;
+    padding: 0;
+}
+.wrap{
+    max-width: 1300px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.header{
+    width: 100%;
+    background: linear-gradient(to right, #FFF, #FF9900);
+}
+
+h2{
+    width: 100%;
+    line-height: 45px;
+    padding-left: 15px;
+}
+.content{
+    min-height: calc(100vh - 45px);
+    margin: 20px auto;
+}
+h3{
+    text-align: center;
+}
+.client-box{
+    display: grid;
+    grid-template-columns: 30% 30% 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 0 10px;
+}
+    @media(max-width: 580px){
+        .client-box{
+            grid-template-columns: 1fr 1fr;
+
+        }
+}
+@media(max-width: 350px) {
+    .client-box {
+        grid-template-columns: 1fr;
+
+    }
+}
+
+.client-box_item{
+    border: 1px solid gray;
+    height: auto;
+    display: flex;
+    padding: 20px 0 0 10px;
+    justify-content: left;
+    flex-direction: column;
+    cursor: pointer;
+}
+.client-box_item:hover .hidden{
+    display: block;
+}
+
+.contract-data > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.contract-data_add{
+    display: none;
+}
+
+.client-box_btn{
+    display: block;
+    line-height: 25px;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    border: 1px solid gray;
+    width: 50%;
+    align-items: center;
+    margin: 10px auto;
+}
+.footer{
+    width: 100%;
+    height: 45px;
+    background-color:  #FFCC66;
+    text-align: center;
+}
