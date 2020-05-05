@@ -41,7 +41,7 @@ h3{
     justify-content: center;
     margin: 0 10px;
 }
-    @media(max-width: 580px){
+    @media(max-width: 640px){
         .client-box{
             grid-template-columns: 1fr 1fr;
 
